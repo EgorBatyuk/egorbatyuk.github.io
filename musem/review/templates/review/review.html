@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Отзывы</title>
+</head>
+<body>
+    {% if message %}
+        <ul>
+            {% for question in message %}
+                <h3>{{ question.author_name }}</h3>
+                <p>{{ question.text }}</p>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>На данный момент отзывов нет</p>
+    {% endif %}
+
+    <a href="/message/">Написвть отзыв</a>
+</body>
+</html>

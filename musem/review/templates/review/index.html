@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum</title>
+    <link rel="stylesheet" href="{% static "review/style.css" %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<header>
+    <div class="logo">
+        <img src="{% static "images/logo.png" %}" alt="">
+    </div>
+    <ul class="head-list">
+        <li><a href="#about">О нас</a></li>
+        <li><a href="">Музей</a></li>
+        <li><a href="">Контакты</a></li>
+    </ul>
+    <a href="" class="download"><div>
+        <p>Скачать</p>
+    </div></a>
+    
+</header>
+<body>
+    <div class="cover">
+        <div class="text-cover">
+            <h1>Виртуальный музей<br>
+                белорусской сказки</h1>
+                <div class="btns">
+                    <a href="#about"><div class="btn"><p>О музее</p></div></a>
+                    <a href=""><div class="btn1"><p>Скачать</p></div></a>
+            </div>
+        </div>    
+        <div class="cover-img">
+            <img src="{% static "images/biblio.png" %}" alt="">
+        </div>        
+        
+    </div>
+    <div class="about">
+        <img src="{% static "images/about.png" %}" alt="Bibliotek" class="about-img">
+        <div class="ab-txt" id="about"><p>Приходя в музей, вы становитесь частью истории, которая заключена в его стенах, вы не только смотрите на картины, но еще и изучаете историю человечества. Поход в музей обеспечит вам новый опыт, опыт других эпох, других людей и других духовных ценностей. На сегодняшний день с известными полотнами художников, другими интересными экспозициями можно знакомиться, не выходя из дома, онлайн</p></div>
+    </div>
+    <h2 class="osobt">Особенности нашего музея:</h2>
+    <div class="osob">
+        <img src="{% static "images/-abou.png" %}" alt="">
+    </div>
+    <div class="download-btn">
+        <a href=""><img src="{% static "images/download.png" %}" alt="download-button" width="60%"></a>
+    </div>
+    
+    </div>
+
+    <div class="Otsiv">
+        <a href="review/">
+        <img src="{% static "images/otsiv.png" %}" alt="" width="60%">
+    </a>
+    </div>
+</body>
+</html>
